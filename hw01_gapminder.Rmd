@@ -13,7 +13,7 @@ library(tidyverse)
 
 ## Exploration of the data frame
 
-Note: I used the mtcars instead of gapminder
+Note: I used the mtcars instead of gapminder.
 Will explore the structure of this dataframe
 
 ```{r}
@@ -28,7 +28,7 @@ summary(mtcars) #summary
 
 ## Extracting columns
 
-Looking at car weights
+Looking at car weights.
 
 ```{r}
 # The names of all the cars in the df
@@ -44,7 +44,7 @@ min(mtcars$wt) #min weight
 max(mtcars$wt) #max weight
 ```
 
-Look at the transmission types and engine shapes
+Looking at the transmission types and engine shapes.
 
 ```{r}
 # Transmission of all the cars, (0 = automatic, 1 = manual)

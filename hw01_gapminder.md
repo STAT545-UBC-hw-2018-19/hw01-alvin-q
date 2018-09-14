@@ -4,7 +4,7 @@ hw01\_gapminder
 Exploration of the data frame
 -----------------------------
 
-Note: I used the mtcars instead of gapminder Will explore the structure of this dataframe
+Note: I used the mtcars instead of gapminder. Will explore the structure of this dataframe
 
 ``` r
 mtcars #display df
