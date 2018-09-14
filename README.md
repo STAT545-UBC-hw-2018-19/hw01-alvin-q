@@ -16,6 +16,20 @@ This repo is Alvin's HW01 assignment.
 * Hometown
   + Toronto, ON
 
+## Head shot
+
+*This is me!*
+
+![Alvin Qiu pic](https://www.grad.ubc.ca/sites/default/files/students/alvin-qiu-1-small.jpg)
+
+## Hobbies
+
+:snowboarder:
+:swimmer:
+:running:
+:bike:
+:musical_keyboard:
+
 ## Want to read more?
 
 Here are some **AMAZING** links about me.
@@ -32,7 +46,7 @@ I also have a short profile on the UBC G&PS site. Read more [here](https://www.g
 | Research Interest     | Syonvial Sarcoma Epigenomics |
 | Location | Michael Smith Labs and Jack Bell Research Centre |
 
-### Favourite quotes
+## Favourite quotes
 
 A few quotes I enjoy:
 
