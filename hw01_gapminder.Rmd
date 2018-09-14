@@ -1,0 +1,66 @@
+---
+title: "hw01_gapminder"
+output: github_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+```
+
+## Exploration of the data frame
+
+Note: I used the mtcars instead of gapminder
+Will explore the structure of this dataframe
+
+```{r}
+mtcars #display df
+
+head(mtcars) #First 6 rows
+str(mtcars) #structure: 32 obs of 11 variables
+ncol(mtcars) #11 cols
+nrow(mtcars) #32 rows
+summary(mtcars) #summary
+```
+
+## Extracting columns
+
+Looking at car weights
+
+```{r}
+# The names of all the cars in the df
+rownames(mtcars)
+
+# Weight of all the cars
+mtcars$wt
+
+# Statical measures of the weights (in 1000lbs) of the these cars
+var(mtcars$wt) #variance
+mean(mtcars$wt) #mean
+min(mtcars$wt) #min weight
+max(mtcars$wt) #max weight
+```
+
+Look at the transmission types and engine shapes
+
+```{r}
+# Transmission of all the cars, (0 = automatic, 1 = manual)
+mtcars$am
+
+# Engine of all the cars, (0 = V-shaped, 1 = straight)
+mtcars$vs
+
+# Count the different type of transmission and engines
+count_transmission_engine <- count(mtcars, am, vs)
+
+# Add actual names instead of 0 and 1
+count_transmission_engine$trans_eng <- c("Automatic, V-Shape", "Automatic, Straight", "Manual, V-Shape", "Manual, Straight")
+
+# Output
+count_transmission_engine
+
+# Conclusion: based on the cars in mtcars, the most common is to have an automatic transmission with a V shaped engine
+```
